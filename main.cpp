@@ -1,14 +1,20 @@
 #include <iostream>
-using namespace std;
+#include <string>
 
 int main() {
-    string nombre, apellido, nombre_completo;
-    cout << "Por favor ecriba su nombre" << "\n";
-    cin >> nombre;
-    cout << "Por favor escriba su apellido" << "\n";
-    cin >> apellido;
+    std::string nombre;
+    std::string apellido;
+    std::string nombre_completo;
+
+    std::cout << "Por favor escriba su nombre:\n";
+    std::cin >> nombre;
+
+    std::cout << "Por favor escriba su apellido:\n";
+    std::cin >> apellido;
+
     nombre_completo = nombre + " " + apellido;
-    cout << "Bienvenido " + nombre_completo + "\n";
-    cin.get();
+
+    std::cout << "Bienvenido " << nombre_completo << std::endl;
+
     return 0;
 }
